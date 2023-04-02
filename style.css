@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+  background: url(imgd/1.jpg) center;
+  font-family: 'Sniglet', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+.quiz-container {
+    margin:-5px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    width: 500
+    px;
+   
+  }
+  .quiz-header {
+    padding: 4rem;
+  }
+  h1{
+    font-size:2.5rem
+  }
+  h2 {
+    padding: 0 1rem;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  
+  ul li label {
+    cursor: pointer;
+  }
+  
+  .submit {
+    border: none;
+    background-color: #a8c82f;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: block;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  #submit:focus:after {
+    content: ', Son Kararım 👍';
+  }
+  
+  #submit:focus {
+    outline: none;
+    background-color: #f87da9;
+  }
+  
+  [type='radio']:checked,
+  [type='radio']:not(:checked) {
+    display: none;
+  }
+  
+  [type='radio']:checked + label,
+  [type='radio']:not(:checked) + label {
+    position: relative;
+    padding-left: 1.8rem;
+    cursor: pointer;
+  }
+  
+  [type='radio']:checked + label:before,
+  [type='radio']:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #ddd;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 100%;
+    background-color: #fff;
+  }
+  
+  [type='radio']:checked + label:after,
+  [type='radio']:not(:checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #f87da9;
+    border-radius: 100%;
+    transition: all 0.2s ease;
+  }
+  
+  [type='radio']:not(:checked) + label:after {
+    opacity: 0;
+  }
+  
+  [type='radio']:checked + label:after {
+    opacity: 1;
+  }
+  
+  
+ 
+  
